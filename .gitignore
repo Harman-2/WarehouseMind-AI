@@ -13,4 +13,4 @@ alembic.ini
 *.sqlite3
 
 .coverage
-htmlcov/
+htmlcov/.env

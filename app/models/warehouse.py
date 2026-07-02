@@ -17,6 +17,12 @@ class Worker(Base):
 
     active = Column(Boolean, default=True)
 
+    shift_start = Column(String, default="08:00 AM")
+
+    shift_end = Column(String, default="04:00 PM")
+
+    zone = Column(String, default="Zone A")
+
 
 
 class Robot(Base):
@@ -29,6 +35,9 @@ class Robot(Base):
     name = Column(String)
 
     status = Column(String)
+
+    battery_level = Column(Integer, default=100)
+
 
 
 
