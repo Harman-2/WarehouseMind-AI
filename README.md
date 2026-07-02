@@ -61,6 +61,7 @@ This project uses Model Context Protocol (MCP) to connect AI agents with real ba
 Acts as the MCP server
 Exposes tools to agents
 Handles tool execution requests
+
 **📌 tools.py**
 
 Contains actual business logic:
@@ -77,19 +78,19 @@ Allows tool reuse across agents
 ## 🔄 System Workflow
 
 User Query
-   ↓
+   ->
 Coordinator Agent (Gemini 2.5 Flash)
-   ↓
+   ->
 Routes to Sub-Agent
-   ↓
+   ->
 Sub-Agent calls MCP Tool
-   ↓
+   ->
 server.py executes tool
-   ↓
+   ->
 tools.py runs logic
-   ↓
+   ->
 Response returned to agent
-   ↓
+   ->
 Final structured answer → UI
 
 ---
