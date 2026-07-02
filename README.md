@@ -133,6 +133,9 @@ Final structured answer → UI
 ---
 ## 🖥️ How to Run Locally
 
+git clone <repository-url>
+cd <repository-directory>
+
 ### 1. Backend
 
 ```bash
