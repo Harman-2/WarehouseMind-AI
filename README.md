@@ -143,8 +143,10 @@ Final structured answer → UI
 
 ## 🖥️ How to Run Locally
 
-git **clone**  https://github.com/Username/WarehouseMind-AI.git
-**cd** WarehouseMind-AI
+```bash
+git clone https://github.com/Username/WarehouseMind-AI.git
+cd WarehouseMind-AI
+```
 
 ### 1. Backend
 
