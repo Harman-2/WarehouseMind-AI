@@ -12,6 +12,7 @@ Generate actionable operational insights
 The system uses **Google ADK (Agent Development Kit)** with **Gemini 2.5 Flash** and integrates a **Model Context Protocol (MCP) tool** layer for real-world data execution.
 
 ---
+
 ## 🧠 Problem Statement
 
 Warehouse operations involve multiple independent systems:
@@ -29,7 +30,9 @@ Not scalable
 WarehouseMind AI solves this by introducing a **coordinated multi-agent system** that automatically routes queries to the correct domain expert agent.
 
 ---
+
 ## 🤖 AI Agent Architecture
+
  **🔹 Coordinator Agent (Main Brain)**
 Routes user queries to correct sub-agent
 Combines responses into final output
@@ -53,6 +56,7 @@ Retrieves SOPs and warehouse policies
 Uses search_warehouse_documents() tool
 
 ---
+
 ## ⚙️ MCP Tool Layer (Important Concept)
 
 This project uses Model Context Protocol (MCP) to connect AI agents with real backend logic.
@@ -75,6 +79,7 @@ Makes system modular and scalable
 Allows tool reuse across agents
 
 ---
+
 ## 🔄 System Workflow
 
 User Query
@@ -94,6 +99,7 @@ Response returned to agent
 Final structured answer → UI
 
 ---
+
 ## 🚀 Key Features
 
 * **Multi-Agent Orchestration:** Intelligent routing between Inventory, Worker, and Knowledge agents.
@@ -103,6 +109,7 @@ Final structured answer → UI
 * **Actionable Intelligence:** Provides specific recommendations and next steps for warehouse managers.
 
 ---
+
 ## 🏗 System Architecture
 
 * **Frontend:** React-based interactive chat interface.
@@ -110,6 +117,7 @@ Final structured answer → UI
 * **Agent Brain:** Google ADK running on Gemini 2.5 Flash.
 
 ---
+
 ### Agent Responsibilities
 
 | Agent                 | Responsibility                       | Primary Tool                     |
@@ -120,6 +128,7 @@ Final structured answer → UI
 | **Knowledge**   | Retrieves SOPs & safety policies     | `search_warehouse_documents()` |
 
 ---
+
 ## ⚙️ Tech Stack
 
 * **Language:** Python 3.10+
@@ -131,10 +140,11 @@ Final structured answer → UI
 * **ASGI Server:** Uvicorn (for running FastAPI backend)
 
 ---
+
 ## 🖥️ How to Run Locally
 
-git clone <repository-url>
-cd <repository-directory>
+git **clone**  https://github.com/Username/WarehouseMind-AI.git
+**cd** WarehouseMind-AI
 
 ### 1. Backend
 
@@ -149,8 +159,10 @@ cd frontend
 npm install
 npm run dev
 ```
+
 ---
-###  Example Queries
+
+### Example Queries
 
 > **Inventory Check:**
 > "Which products are currently below threshold and what is the restocking risk?"
